@@ -1,16 +1,18 @@
 import random
-
-element = random.randint(0,10)
-print(f"Computer guessed {element}")
+import time
 
 print("Hi, I'm Nisha\nI'm thinking a number\nGuess the number I am thinking")
 print("!!!Note: Each time you enter the wrong guess I'll change my number!!!")
 print()
+time.sleep(5)
 
 while True:
     try:
+        element = random.randint(0,10)
+
         print("!!!Type 'exit' for exit!!!")
         guess = input("Enter number between 0-10: ")
+        
 
         if guess.lower() == "exit":
             print()
